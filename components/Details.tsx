@@ -1,5 +1,5 @@
-import React, { FC } from "react";
-
+import { FC } from "react";
+import style from '../styles/details.module.css';
 
 interface Detail {
   title: string;
@@ -26,27 +26,25 @@ const Details: FC<Props> = ({ details }) => {
     return typeof data !== "string" && "url" in data;
   }
 
-  // const details = { title, contents, isOpen };
-
-  return (<details open={isOpen}>
-    <summary>{title}</summary>
+  return (<details open={isOpen} className={style.details}>
+    <summary className={style.summary}>{title}</summary>
     <ul>
       {
-        contents.map((content) => {
+        contents.map((content, index) => {
           if (instanceOfDetailsType(content)) {
             return (
-              <li>
-                <Details details={details} />
+              <li className={style.li} key={`${index}+${content.title}`}>
+                <Details details={content} />
               </li>
             );
           } else if (instanceOfDetailLink(content)) {
             return (
-              <li>
+              <li className={style.li} key={index}>
                 <a className={content.isNew ? 'new' : ''} href={content.url}>{content.title}</a>
               </li>
             );
           }
-          return <li>{content}</li>;
+          return <li className={style.li} key={`${index}+${content}`}>{content}</li>;
         })
       }
     </ul>
