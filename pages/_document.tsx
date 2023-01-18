@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+import React from 'react'
 
 export default function Document() {
   const meta = {
@@ -8,7 +9,7 @@ export default function Document() {
   }
 
   return (
-    <Html lang="en">
+    <Html lang="fr">
       <Head>
         <meta name="robots" content="follow, index" />
         <meta name="description" content={meta.description} />
