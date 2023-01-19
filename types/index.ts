@@ -1,12 +1,3 @@
-export interface Article {
-	title: string;
-	client: string;
-	description: string;
-	publishDate: string;
-	tags: string[];
-	img: string;
-}
-
 interface Detail {
 	title: string;
   isShow?: boolean;
@@ -20,9 +11,4 @@ export interface DetailLink extends Detail {
 export interface DetailsType extends Detail {
 	contents: Array<string | DetailsType | DetailLink>;
 	isOpen?: boolean;
-}
-
-export interface RoleType {
-	first:string;
-	second:string;
 }

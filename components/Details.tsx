@@ -19,21 +19,23 @@ const Details: FC<Props> = ({ details }) => {
     <summary className={style.summary}>{title}</summary>
     <ul>
       {
-        contents.filter((c)=>typeof c !== 'string' && c.isShow).map((content, index) => {
-          if (instanceOfDetailsType(content)) {
-            return (
-              <li className={style.li} key={`${index}+${content.title}`}>
-                <Details details={content} />
-              </li>
-            );
-          } else if (instanceOfDetailLink(content)) {
-            return (
-              <li className={content.isNew? style.liNew : style.li} key={index}>
-                <Link href={content.url}>{content.title}</Link>
-              </li>
-            );
-          }
-        })
+        contents
+          .filter((c) => typeof c !== 'string' && c.isShow)
+          .map((content, index) => {
+            if (instanceOfDetailsType(content)) {
+              return (
+                <li className={style.li} key={`${index}+${content.title}`}>
+                  <Details details={content} />
+                </li>
+              );
+            } else if (instanceOfDetailLink(content)) {
+              return (
+                <li className={content.isNew ? style.liNew : style.li} key={`${index}+${content.title}`}>
+                  <Link href={content.url}>{content.title}</Link>
+                </li>
+              );
+            }
+          })
       }
     </ul>
   </details>)

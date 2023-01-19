@@ -1,8 +1,10 @@
 const YEAR = new Date().getFullYear()
 
 export default {
-  head: ({ meta }) => (
+  head: ({ title, meta }) => (
     <>
+      <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico"></link>
+      <title>{`F1D ~${title}~`}</title>
       {meta.description && (
         <meta name="description" content={meta.description} />
       )}
