@@ -6,4 +6,7 @@ tasks:
   - init: pnpm install
     command: pnpm run dev
 
-
+ports:
+  - name: Website
+    port: 3000
+    onOpen: open-preview
