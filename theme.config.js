@@ -13,12 +13,7 @@ export default {
   readMore: `voir l'article →`,
   postFooter: null,
   darkMode: true,
-  navs: [
-    {
-      url: '/javascript',
-      name: 'Road map JS'
-    }
-  ],
+  navs: [],
   footer: (
     <p className="footer-detail">
       <span>

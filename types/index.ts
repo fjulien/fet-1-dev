@@ -9,6 +9,7 @@ export interface Article {
 
 interface Detail {
 	title: string;
+  isShow?: boolean;
 }
 
 export interface DetailLink extends Detail {

@@ -1,23 +1,11 @@
 import { FC } from "react";
 import style from '../styles/details.module.css';
+import { DetailLink, DetailsType } from "../types";
 
-interface Detail {
-  title: string;
-}
-
-export interface DetailLink extends Detail {
-  isNew?: boolean;
-  url: string;
-}
-
-export interface DetailsType extends Detail {
-  contents: Array<string | DetailsType | DetailLink>;
-  isOpen?: boolean;
-}
 type Props = { details: DetailsType };
 
 const Details: FC<Props> = ({ details }) => {
-  const { title, contents, isOpen = false } = details;
+  const { title, contents, isOpen = false, isShow = false } = details;
   const instanceOfDetailsType = (data: any): data is DetailsType => {
     return typeof data !== "string" && "contents" in data;
   }
@@ -30,7 +18,7 @@ const Details: FC<Props> = ({ details }) => {
     <summary className={style.summary}>{title}</summary>
     <ul>
       {
-        contents.map((content, index) => {
+        contents.filter((c)=>typeof c !== 'string' && c.isShow).map((content, index) => {
           if (instanceOfDetailsType(content)) {
             return (
               <li className={style.li} key={`${index}+${content.title}`}>
@@ -39,12 +27,11 @@ const Details: FC<Props> = ({ details }) => {
             );
           } else if (instanceOfDetailLink(content)) {
             return (
-              <li className={style.li} key={index}>
-                <a className={content.isNew ? 'new' : ''} href={content.url}>{content.title}</a>
+              <li className={content.isNew? style.liNew : style.li} key={index}>
+                <a href={content.url}>{content.title}</a>
               </li>
             );
           }
-          return <li className={style.li} key={`${index}+${content}`}>{content}</li>;
         })
       }
     </ul>

@@ -5,14 +5,19 @@
 
 .details {
   width: 100%;
-  padding: 0.5rem 0 1rem 0;
+  padding: 0.3rem 0 0.3rem 0;
   border-top: 1px solid white;
   position: relative;
   cursor: pointer;
-  font-size: 1.25rem;
   font-weight: 300;
 }
 
 .li{
-  margin-left: 2em;
+  margin: 0 0 0 1em;
+  list-style-type: none;
+}
+
+.liNew{
+  margin: 0 0 0 1em;
+  list-style-type: '->';
 }
