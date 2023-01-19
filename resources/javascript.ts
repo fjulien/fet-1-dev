@@ -12,7 +12,7 @@ export const javascript: DetailsType = {
         "hoisting",
         "scope",
         {
-          title: "var / let / const",
+          title: "Les variables",
           url: "/posts/les-variables",
           isNew: true,
           isShow: true

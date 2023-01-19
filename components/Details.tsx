@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FC } from "react";
 import style from '../styles/details.module.css';
 import { DetailLink, DetailsType } from "../types";
@@ -28,7 +29,7 @@ const Details: FC<Props> = ({ details }) => {
           } else if (instanceOfDetailLink(content)) {
             return (
               <li className={content.isNew? style.liNew : style.li} key={index}>
-                <a href={content.url}>{content.title}</a>
+                <Link href={content.url}>{content.title}</Link>
               </li>
             );
           }
