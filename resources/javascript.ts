@@ -1,10 +1,13 @@
-import { title } from "process";
 import type { DetailsType } from "../types";
 
 export const javascript: DetailsType = {
   title: "Javascript",
   isShow: true,
   contents: [
+    {
+      title: "Javascript",
+      url: "/posts/javascript",
+    },
     {
       title: "Base du language",
       isShow: true,
