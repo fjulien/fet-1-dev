@@ -9,5 +9,38 @@ tag: Web development, JavaScript, Bases
 
 ## TLDR (Too Long; Didn't Read)
 Les variables sont au coeur de tout programme en JavaScript, elles permettent de stocker des informations pour les utiliser plus tard dans votre code.
- Il existe différentes façons de les déclarer  `var, let et const`, utiliser les bons mots clés vous permettra de mieux gérer les portées et les réaffectations pour éviter les erreurs. 
+ Il existe différentes façons de les déclarer  `var`, `let` et `const`, utiliser les bons mots clés vous permettra de mieux gérer les portées et les réaffectations pour éviter les erreurs. 
  Apprendre à bien utiliser les variables est une étape cruciale pour devenir un développeur JavaScript expérimenté.
+
+
+### Déclaration
+
+```javascript
+var maVariable;
+maVariable = "Ceci est une chaîne de caractères";
+maVariable = 42; // la variable peut être réaffectée à une nouvelle valeur
+```
+
+Il est à noter que les variables déclarées avec var ont une portée de fonction, c'est-à-dire qu'elles sont accessibles dans toute la fonction ou dans le script où elles ont été déclarées, même si elles ont été déclarées à l'intérieur d'un bloc.
+
+Depuis ECMAScript 6, il est possible de déclarer des variables avec `let`, `const`. 
+
+`let` permet de déclarer une variable qui peut être réaffectée à une nouvelle valeur plus tard dans le code, tandis que `const` déclare une variable qui ne peut pas être réaffectée, se qui veut qu'on ne peut pas la réasigner avec `=`, mais .
+
+```javascript
+let maVariable2 = "Ceci est une autre chaîne de caractères";
+maVariable2 = "Nouvelle valeur"; // réaffectation de la variable
+
+const maVariable3 = "Ceci est une chaîne de caractères";
+maVariable3 = "Nouvelle valeur"; // cela génére une erreure car déclaré avec const
+```
+
+Il est important de noter que les variables déclarées avec let et const ont une portée de bloc, c'est-à-dire qu'elles sont uniquement accessibles dans le bloc où elles ont été déclarées.
+
+Plusieurs types de données peuvent être stocké dans les variables (Boolean, string, number, Array, Object, ...). 
+Il est important de choisir des noms de variables descriptifs pour faciliter la compréhension de votre code et il est également recommandé d'utiliser `let` et `const` à la place de `var` car ils ont un comportement plus prévisible et sont plus sûrs à utiliser.
+
+### Résumé
+- Déclarater une variable `var`, `let` et `const`.
+- `const` est nom réafectable.
+- `var` est déconseillé.
