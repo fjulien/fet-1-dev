@@ -1,7 +1,7 @@
 const YEAR = new Date().getFullYear()
 
 export default {
-  head: ({ title, meta }) => (
+  head: ({ meta }) => (
     <>
       {meta.description && (
         <meta name="description" content={meta.description} />
@@ -10,30 +10,22 @@ export default {
       {meta.author && <meta name="author" content={meta.author} />}
     </>
   ),
-  readMore: 'Read More →',
+  readMore: `voir l'article →`,
   postFooter: null,
-  darkMode: false,
+  darkMode: true,
   navs: [
     {
       url: '/javascript',
-      name: 'JS'
+      name: 'Road map JS'
     }
   ],
   footer: (
-    <small style={{ display: 'block', marginTop: '8rem' }}>
-      <time>{YEAR}</time> © Your Name.
+    <p className="footer-detail">
+      <span>
+      <time>{YEAR}</time> 
+      © FETTINGER Julien.
+      </span>
       <a href="/feed.xml">RSS</a>
-      <style jsx>{`
-        a {
-          float: right;
-        }
-        @media screen and (max-width: 480px) {
-          article {
-            padding-top: 2rem;
-            padding-bottom: 4rem;
-          }
-        }
-      `}</style>
-    </small>
+    </p>
   )
 }

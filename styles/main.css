@@ -63,3 +63,23 @@ img.next-image {
 .nav-line .nav-link {
   color: #69778c;
 }
+
+article{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+}
+
+.footer-detail{
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+@media screen and (max-width: 480px) {
+  article {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
