@@ -83,3 +83,8 @@ article{
     padding-bottom: 2rem;
   }
 }
+
+.center-bloc{
+    display: flex;
+    justify-content: center;
+}

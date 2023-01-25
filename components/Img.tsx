@@ -6,11 +6,12 @@ type Props = {
   alt: string;
   width: number;
   height: number;
+  isCenter: boolean
 }
 
-const Img: FC<Props> = ({ src, alt, width = 500, height = 0 }) => {
+const Img: FC<Props> = ({ src, alt, width = 500, height = 0, isCenter = true }) => {
   return (
-    <>
+    <div className={isCenter?'center-bloc' : ''}>
       <Image
         src={src}
         alt={alt}
@@ -19,7 +20,7 @@ const Img: FC<Props> = ({ src, alt, width = 500, height = 0 }) => {
         priority
         className="next-image"
       />
-    </>)
+    </div>)
 }
 
 export default Img;
