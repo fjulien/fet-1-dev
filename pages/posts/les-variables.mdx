@@ -7,18 +7,17 @@ tag: Web development, JavaScript, Bases
 
 import Codesandbox from '../../components/Codesandbox'
 import Img from '../../components/Img'
+import TitleSection from '../../components/TitleSection'
 
 # Les Variables
 
 <Img src="/images/posts/variables.png" alt="Boites de variable"></Img>
 
-## TLDR (Too Long; Didn't Read)
+<TitleSection title="TLDR">(Too Long; Didn't Read)</TitleSection>
 
 Les variables sont au coeur de tout programme en JavaScript, elles permettent de stocker des informations pour les utiliser plus tard dans votre code.
 Il existe différentes façons de les déclarer `var`, `let` et `const`, utiliser les bons mots clés vous permettra de mieux gérer les portées et les réaffectations pour éviter les erreurs.
 Apprendre à bien utiliser les variables est une étape cruciale pour devenir un développeur JavaScript expérimenté.
-
-## Code
 
 ```javascript
 var nomVariable1
@@ -32,20 +31,20 @@ const nomVariable3 = 'Ceci est une chaîne de caractères'
 nomVariable3 = 'Nouvelle valeur' // Cela génére une erreure car déclaré avec const
 ```
 
-## Résumé
+<TitleSection title="Résumé"></TitleSection>
 
 - Déclatration d'une variable `var`, `let` et `const`.
 - `const` est nom réafectable.
 - `var` est déconseillé car a une porter globale.
 
-## Exercice
+<TitleSection title="Exercice"></TitleSection>
 
 <Codesandbox
   src="/les-variables-87rwgp?https://codesandbox.io/embed/les-variables-87rwgp"
   paramsUrl={{ path: '%2Fsrc%2Findex.js' }}
 ></Codesandbox>
 
-## Pour approfondire
+<TitleSection title="Pour approfondire"></TitleSection>
 
 - [MDN](https://developer.mozilla.org/fr/docs/Learn/JavaScript/First_steps/Variables)
 - [Wikipedia](<https://fr.wikipedia.org/wiki/Variable_(informatique)>)
