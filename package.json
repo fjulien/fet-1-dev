@@ -5,7 +5,8 @@
     "dev": "next",
     "build": "node ./scripts/gen-rss.js && next build",
     "start": "next start",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "eslint . --ext .ts --fix"
   },
   "dependencies": {
     "gray-matter": "^4.0.2",
@@ -29,6 +30,7 @@
     "@typescript-eslint/eslint-plugin": "^5.49.0",
     "@typescript-eslint/parser": "^5.49.0",
     "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.0",
     "prettier": "2.8.3",

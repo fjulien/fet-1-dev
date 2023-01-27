@@ -1,250 +1,236 @@
-import type { DetailsType } from "../types";
+import type { DetailsType } from '../types'
 
 export const javascript: DetailsType = {
-  title: "Javascript",
+  title: 'Javascript',
   isShow: true,
   contents: [
     {
-      title: "Javascript",
-      url: "/posts/javascript",
+      title: 'Javascript',
+      url: '/posts/javascript'
     },
     {
-      title: "Base du language",
+      title: 'Base du language',
       isShow: true,
       contents: [
-        "hoisting",
-        "scope",
+        'hoisting',
+        'scope',
         {
-          title: "Les variables",
-          url: "/posts/les-variables",
+          title: 'Les variables',
+          url: '/posts/les-variables',
           isNew: true,
           isShow: true
         },
-        "Math",
-        "Ecmascript",
-        "switch",
-        "conditions",
-        "ternaire",
-        "operateur logique",
-        "use strict",
+        'Math',
+        'Ecmascript',
+        'switch',
+        'conditions',
+        'ternaire',
+        'operateur logique',
+        'use strict',
         {
-          title: "boucle",
-          contents: ["for", "for in", "for of", "while", "do while"],
+          title: 'boucle',
+          contents: ['for', 'for in', 'for of', 'while', 'do while']
         },
         {
-          title: "variable",
+          title: 'variable',
           contents: [
             {
-              title: "primitive",
+              title: 'primitive',
               contents: [
-                "boolean",
-                "number",
-                "String",
-                "undefined",
-                "Synbol",
-                "NaN",
-                "null",
-                "Circular",
-              ],
+                'boolean',
+                'number',
+                'String',
+                'undefined',
+                'Synbol',
+                'NaN',
+                'null',
+                'Circular'
+              ]
             },
             {
-              title: "Complexe",
+              title: 'Complexe',
               contents: [
-                "JSON",
-                "Map",
-                "Set",
-                "Proxi",
+                'JSON',
+                'Map',
+                'Set',
+                'Proxi',
                 {
-                  title: "Array",
-                  contents: [
-                    "foreach",
-                    "map",
-                    "filter",
-                    "reduce",
-                    "autres",
-                  ],
+                  title: 'Array',
+                  contents: ['foreach', 'map', 'filter', 'reduce', 'autres']
                 },
-                { title: "Object", contents: [] },
-              ],
-            },
-          ],
+                { title: 'Object', contents: [] }
+              ]
+            }
+          ]
         },
 
-        "Destructuration",
-        "Spread opératuer",
-        "closue",
-        "Curring",
+        'Destructuration',
+        'Spread opératuer',
+        'closue',
+        'Curring',
         {
-          title: "Asyncrone",
-          contents: ["callback", "then", "async / await"],
+          title: 'Asyncrone',
+          contents: ['callback', 'then', 'async / await']
         },
         {
-          title: "Fonction",
-          contents: [
-            "Arrow",
-            "Auto invoked",
-            "generator",
-            "r2cursiviter",
-          ],
-        },
-      ],
+          title: 'Fonction',
+          contents: ['Arrow', 'Auto invoked', 'generator', 'r2cursiviter']
+        }
+      ]
     },
     {
-      title: 'Navigateur', 
-      contents: [
-        "DOM",
-        "AJAX",
-        "XHR",]
-    },
-  ],
-};
+      title: 'Navigateur',
+      contents: ['DOM', 'AJAX', 'XHR']
+    }
+  ]
+}
 
 const environemnt: DetailsType = {
-  title: "Environement",
+  title: 'Environement',
   contents: [
-    "internet",
-    "HTTP / HTTPS",
+    'internet',
+    'HTTP / HTTPS',
     {
-      title: "Navigateur",
-      contents: ["inspecteur", "devtools", "network"],
+      title: 'Navigateur',
+      contents: ['inspecteur', 'devtools', 'network']
     },
     {
-      title: "frontend",
+      title: 'frontend',
       contents: [
-        "composant",
-        "SPA et MPA",
-        "routage",
-        "cookies",
-        "localstorage",
+        'composant',
+        'SPA et MPA',
+        'routage',
+        'cookies',
+        'localstorage',
 
-        { title: "Architecture", contents: [] },
-      ],
+        { title: 'Architecture', contents: [] }
+      ]
     },
     {
-      title: "backend",
-      contents: ["API client", "API Rest", "GraphQl", "Websocket"],
+      title: 'backend',
+      contents: ['API client', 'API Rest', 'GraphQl', 'Websocket']
     },
     {
-      title: "BDD",
-      contents: ["relationnel", "non relationnel", "graphique"],
-    },
-  ],
-};
+      title: 'BDD',
+      contents: ['relationnel', 'non relationnel', 'graphique']
+    }
+  ]
+}
 const ide: DetailsType = {
-  title: "IDE",
-  contents: ["vsc", "intellj", "gitpod", "playcode"],
-};
+  title: 'IDE',
+  contents: ['vsc', 'intellj', 'gitpod', 'playcode']
+}
 const html: DetailsType = {
-  title: "HTML",
-  contents: ["basic", "Accesibilité", "Sémantique"],
-};
+  title: 'HTML',
+  contents: ['basic', 'Accesibilité', 'Sémantique']
+}
 const css: DetailsType = {
-  title: "CSS",
+  title: 'CSS',
   contents: [
-    "basic",
-    "flexbox",
-    "grid",
-    "responsive",
-    { title: "preprocessors", contents: ["SCSS"] },
-    { title: "Architecture", contents: ["Atomic"] },
-  ],
-};
+    'basic',
+    'flexbox',
+    'grid',
+    'responsive',
+    { title: 'preprocessors', contents: ['SCSS'] },
+    { title: 'Architecture', contents: ['Atomic'] }
+  ]
+}
 
-const dataStructure: DetailsType = { title: "Data structure", contents: [] };
+const dataStructure: DetailsType = { title: 'Data structure', contents: [] }
 const bestPratice: DetailsType = {
-  title: "bestPratice",
+  title: 'bestPratice',
   contents: [
-    "Complexité",
-    "Convention de nommage",
-    "Taille / découpage",
-    "DRY",
-    "KISS",
-    "SOLID",
-    "Puer fonction",
-  ],
-};
+    'Complexité',
+    'Convention de nommage',
+    'Taille / découpage',
+    'DRY',
+    'KISS',
+    'SOLID',
+    'Puer fonction'
+  ]
+}
 const toolsOfBuild: DetailsType = {
-  title: "Build tools",
-  contents: ["Webpack", "ViteJS", "Rollup"],
-};
+  title: 'Build tools',
+  contents: ['Webpack', 'ViteJS', 'Rollup']
+}
 const Paradigms: DetailsType = {
-  title: "Paradigms",
+  title: 'Paradigms',
   contents: [
-    { title: "POO", contents: ["Typescripte"] },
-    "Programation fonctionnelle",
-    "Reactive",
-  ],
-};
+    { title: 'POO', contents: ['Typescripte'] },
+    'Programation fonctionnelle',
+    'Reactive'
+  ]
+}
 const tests: DetailsType = {
-  title: "Tests",
-  contents: ["TU", "TI", "e2e", "TDD"],
-};
+  title: 'Tests',
+  contents: ['TU', 'TI', 'e2e', 'TDD']
+}
 const algoExo: DetailsType = {
-  title: "Algoritmie et pratique",
+  title: 'Algoritmie et pratique',
   contents: [
     {
-      title: "Niveau 1",
+      title: 'Niveau 1',
       contents: [
-        "fizz buzz",
-        "Suite de finabochi",
-        "Compararaion de tableau",
-        "Clean duplication tableau ",
+        'fizz buzz',
+        'Suite de finabochi',
+        'Compararaion de tableau',
+        'Clean duplication tableau ',
         "Création d'un compteur",
-        "tri d'un tableau",
-      ],
+        "tri d'un tableau"
+      ]
     },
     {
-      title: "Niveau 2",
-      contents: ["Refaire les méthodes map, filter et sort de Array"],
-    },
-  ],
-};
+      title: 'Niveau 2',
+      contents: ['Refaire les méthodes map, filter et sort de Array']
+    }
+  ]
+}
 const packageManagement: DetailsType = {
-  title: "Gestion de dépendances",
-  contents: ["NPM", "YARN", "PNPM"],
-};
+  title: 'Gestion de dépendances',
+  contents: ['NPM', 'YARN', 'PNPM']
+}
 const versionning: DetailsType = {
-  title: "Verssionage",
-  contents: [{ title: "git", contents: ["github", "gitlab", "bitbucket"] }],
-};
+  title: 'Verssionage',
+  contents: [{ title: 'git', contents: ['github', 'gitlab', 'bitbucket'] }]
+}
 const jsFrameworkFront: DetailsType = {
-  title: "Framework frontend",
+  title: 'Framework frontend',
   contents: [
-    "next",
-    "nuxt",
-    "vue",
-    "svelte",
+    'next',
+    'nuxt',
+    'vue',
+    'svelte',
     {
-      title: "React",
-      contents: ["composant", "routage", "Formualire", "hooks"],
+      title: 'React',
+      contents: ['composant', 'routage', 'Formualire', 'hooks']
     },
     {
-      title: "Angular",
-      contents: ["ReactiveForm", "routage", "rxjs", "composant"],
-    },
-  ],
-};
+      title: 'Angular',
+      contents: ['ReactiveForm', 'routage', 'rxjs', 'composant']
+    }
+  ]
+}
 const jsFrameworkBack: DetailsType = {
-  title: "Framework backend",
-  contents: ["express", "denoJs"],
-};
+  title: 'Framework backend',
+  contents: ['express', 'denoJs']
+}
 const Patern: DetailsType = {
-  title: "Design patern",
+  title: 'Design patern',
   contents: [
-    { title: "State management", contents: ["Redux"] },
-    "Singluton",
-    { title: "Observable", contents: ["RXJS"] },
-  ],
-};
+    { title: 'State management', contents: ['Redux'] },
+    'Singluton',
+    { title: 'Observable', contents: ['RXJS'] }
+  ]
+}
 const Linux: DetailsType = {
-  title: "Linux",
-  contents: [{ title: "Terminal", contents: ["Commandes de bases"] }],
-};
+  title: 'Linux',
+  contents: [{ title: 'Terminal', contents: ['Commandes de bases'] }]
+}
 const architecture: DetailsType = {
-  title: "Architecture",
-  contents: ["3 tiers", "Hexagonal"],
-};
-const methodAgile: DetailsType = { title: "Agilité", contents: [] };
+  title: 'Architecture',
+  contents: ['3 tiers', 'Hexagonal']
+}
+const methodAgile: DetailsType = { title: 'Agilité', contents: [] }
 
 const treeJavascript: DetailsType[] = [
   environemnt,
@@ -265,7 +251,7 @@ const treeJavascript: DetailsType[] = [
   Patern,
   Linux,
   architecture,
-  methodAgile,
-].filter(e=>e.isShow);
+  methodAgile
+].filter((e) => e.isShow)
 
-export default treeJavascript;
+export default treeJavascript

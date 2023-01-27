@@ -1,6 +1,6 @@
-import type { DetailsType } from "../types";
+import type { DetailsType } from '../types'
 
-export const firstLevel:DetailsType = {
-    title:'Bases',
-    contents:['Les variables', 'Les fonctions']
+export const firstLevel: DetailsType = {
+  title: 'Bases',
+  contents: ['Les variables', 'Les fonctions']
 }
