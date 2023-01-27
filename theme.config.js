@@ -12,15 +12,14 @@ export default {
       {meta.author && <meta name="author" content={meta.author} />}
     </>
   ),
-  readMore: `voir l'article →`,
+  readMore: `Lire la suite`,
   postFooter: null,
   darkMode: true,
   navs: [],
   footer: (
     <p className="footer-detail">
       <span>
-      <time>{YEAR}</time> 
-      © FETTINGER Julien.
+        <time>{YEAR}</time>© FETTINGER Julien.
       </span>
       <a href="/feed.xml">RSS</a>
     </p>
