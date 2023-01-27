@@ -9,7 +9,7 @@ type Props = {
   isCenter: boolean
 }
 
-const Img: FC<Props> = ({ src, alt, width = 500, height = 0, isCenter = true }) => {
+const Img: FC<Props> = ({ src, alt, width = 1000, height = 0, isCenter = true }) => {
   return (
     <div className={isCenter?'center-bloc' : ''}>
       <Image
