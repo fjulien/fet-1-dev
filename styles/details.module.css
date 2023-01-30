@@ -1,4 +1,3 @@
-
 .summary::-webkit-details-marker {
   display: none;
 }
@@ -12,12 +11,12 @@
   font-weight: 300;
 }
 
-.li{
+.li {
   margin: 0 0 0 1em;
   list-style-type: none;
 }
 
-.liNew{
+.liNew {
   margin: 0 0 0 1em;
   list-style-type: '->';
 }

@@ -64,14 +64,14 @@ img.next-image {
   color: #69778c;
 }
 
-article{
+article {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   padding-bottom: 4rem;
 }
 
-.footer-detail{
+.footer-detail {
   display: flex;
   justify-content: space-between;
   margin-top: auto;
@@ -84,7 +84,7 @@ article{
   }
 }
 
-.center-bloc{
-    display: flex;
-    justify-content: center;
+.center-bloc {
+  display: flex;
+  justify-content: center;
 }

@@ -1,16 +1,16 @@
-import { CSSProperties, FC } from 'react'
+import { CSSProperties, FC } from 'react';
 
 type Props = Partial<{
-  src: string
-  title: string
-  allow: string
-  sandbox: string
-  heigth: number
+  src: string;
+  title: string;
+  allow: string;
+  sandbox: string;
+  heigth: number;
   paramsUrl?: {
-    path: string
-    view: 'editor'
-  }
-}>
+    path: string;
+    view: 'editor';
+  };
+}>;
 
 const Codesandbox: FC<Props> = (props) => {
   const {
@@ -20,10 +20,10 @@ const Codesandbox: FC<Props> = (props) => {
     sandbox = 'allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts',
     heigth = 400,
     paramsUrl
-  } = props
+  } = props;
 
-  const view = paramsUrl?.view || 'editor'
-  const path = paramsUrl?.path || 'index.html'
+  const view = paramsUrl?.view || 'editor';
+  const path = paramsUrl?.path || 'index.html';
 
   const style: CSSProperties = {
     width: '100%',
@@ -31,7 +31,7 @@ const Codesandbox: FC<Props> = (props) => {
     border: 0,
     borderRadius: '4px',
     overflow: 'hidden'
-  }
+  };
   return (
     <iframe
       src={`https://codesandbox.io/embed${src}&fontsize=14&hidenavigation=1&theme=dark&view=${view}&module=${path}`}
@@ -40,7 +40,7 @@ const Codesandbox: FC<Props> = (props) => {
       allow={allow}
       sandbox={sandbox}
     ></iframe>
-  )
-}
+  );
+};
 
-export default Codesandbox
+export default Codesandbox;

@@ -1,14 +1,14 @@
 interface Detail {
-	title: string;
+  title: string;
   isShow?: boolean;
 }
 
 export interface DetailLink extends Detail {
-	isNew?: boolean;
-	url:string;
+  isNew?: boolean;
+  url: string;
 }
 
 export interface DetailsType extends Detail {
-	contents: Array<string | DetailsType | DetailLink>;
-	isOpen?: boolean;
+  contents: Array<string | DetailsType | DetailLink>;
+  isOpen?: boolean;
 }

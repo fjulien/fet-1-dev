@@ -1,4 +1,4 @@
-import type { DetailsType } from '../types'
+import type { DetailsType } from '../types';
 
 export const javascript: DetailsType = {
   title: 'Javascript',
@@ -83,7 +83,7 @@ export const javascript: DetailsType = {
       contents: ['DOM', 'AJAX', 'XHR']
     }
   ]
-}
+};
 
 const environemnt: DetailsType = {
   title: 'Environement',
@@ -115,15 +115,15 @@ const environemnt: DetailsType = {
       contents: ['relationnel', 'non relationnel', 'graphique']
     }
   ]
-}
+};
 const ide: DetailsType = {
   title: 'IDE',
   contents: ['vsc', 'intellj', 'gitpod', 'playcode']
-}
+};
 const html: DetailsType = {
   title: 'HTML',
   contents: ['basic', 'Accesibilité', 'Sémantique']
-}
+};
 const css: DetailsType = {
   title: 'CSS',
   contents: [
@@ -134,9 +134,9 @@ const css: DetailsType = {
     { title: 'preprocessors', contents: ['SCSS'] },
     { title: 'Architecture', contents: ['Atomic'] }
   ]
-}
+};
 
-const dataStructure: DetailsType = { title: 'Data structure', contents: [] }
+const dataStructure: DetailsType = { title: 'Data structure', contents: [] };
 const bestPratice: DetailsType = {
   title: 'bestPratice',
   contents: [
@@ -148,11 +148,11 @@ const bestPratice: DetailsType = {
     'SOLID',
     'Puer fonction'
   ]
-}
+};
 const toolsOfBuild: DetailsType = {
   title: 'Build tools',
   contents: ['Webpack', 'ViteJS', 'Rollup']
-}
+};
 const Paradigms: DetailsType = {
   title: 'Paradigms',
   contents: [
@@ -160,11 +160,11 @@ const Paradigms: DetailsType = {
     'Programation fonctionnelle',
     'Reactive'
   ]
-}
+};
 const tests: DetailsType = {
   title: 'Tests',
   contents: ['TU', 'TI', 'e2e', 'TDD']
-}
+};
 const algoExo: DetailsType = {
   title: 'Algoritmie et pratique',
   contents: [
@@ -184,15 +184,15 @@ const algoExo: DetailsType = {
       contents: ['Refaire les méthodes map, filter et sort de Array']
     }
   ]
-}
+};
 const packageManagement: DetailsType = {
   title: 'Gestion de dépendances',
   contents: ['NPM', 'YARN', 'PNPM']
-}
+};
 const versionning: DetailsType = {
   title: 'Verssionage',
   contents: [{ title: 'git', contents: ['github', 'gitlab', 'bitbucket'] }]
-}
+};
 const jsFrameworkFront: DetailsType = {
   title: 'Framework frontend',
   contents: [
@@ -209,11 +209,11 @@ const jsFrameworkFront: DetailsType = {
       contents: ['ReactiveForm', 'routage', 'rxjs', 'composant']
     }
   ]
-}
+};
 const jsFrameworkBack: DetailsType = {
   title: 'Framework backend',
   contents: ['express', 'denoJs']
-}
+};
 const Patern: DetailsType = {
   title: 'Design patern',
   contents: [
@@ -221,16 +221,16 @@ const Patern: DetailsType = {
     'Singluton',
     { title: 'Observable', contents: ['RXJS'] }
   ]
-}
+};
 const Linux: DetailsType = {
   title: 'Linux',
   contents: [{ title: 'Terminal', contents: ['Commandes de bases'] }]
-}
+};
 const architecture: DetailsType = {
   title: 'Architecture',
   contents: ['3 tiers', 'Hexagonal']
-}
-const methodAgile: DetailsType = { title: 'Agilité', contents: [] }
+};
+const methodAgile: DetailsType = { title: 'Agilité', contents: [] };
 
 const treeJavascript: DetailsType[] = [
   environemnt,
@@ -252,6 +252,6 @@ const treeJavascript: DetailsType[] = [
   Linux,
   architecture,
   methodAgile
-].filter((e) => e.isShow)
+].filter((e) => e.isShow);
 
-export default treeJavascript
+export default treeJavascript;

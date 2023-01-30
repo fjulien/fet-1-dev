@@ -1,4 +1,4 @@
-const YEAR = new Date().getFullYear()
+const YEAR = new Date().getFullYear();
 
 export default {
   head: ({ title, meta }) => (
@@ -24,4 +24,4 @@ export default {
       <a href="/feed.xml">RSS</a>
     </p>
   )
-}
+};

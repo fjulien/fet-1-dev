@@ -1,17 +1,23 @@
-import { FC } from "react";
-import Image from "next/image";
+import { FC } from 'react';
+import Image from 'next/image';
 
 type Props = {
   src: string;
   alt: string;
   width: number;
   height: number;
-  isCenter: boolean
-}
+  isCenter: boolean;
+};
 
-const Img: FC<Props> = ({ src, alt, width = 1000, height = 0, isCenter = true }) => {
+const Img: FC<Props> = ({
+  src,
+  alt,
+  width = 1000,
+  height = 0,
+  isCenter = true
+}) => {
   return (
-    <div className={isCenter?'center-bloc' : ''}>
+    <div className={isCenter ? 'center-bloc' : ''}>
       <Image
         src={src}
         alt={alt}
@@ -20,7 +26,8 @@ const Img: FC<Props> = ({ src, alt, width = 1000, height = 0, isCenter = true })
         priority
         className="next-image"
       />
-    </div>)
-}
+    </div>
+  );
+};
 
 export default Img;
