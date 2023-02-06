@@ -3,8 +3,8 @@ import React from 'react';
 
 export default function Document() {
   const meta = {
-    title: 'Next.js Blog Starter Kit',
-    description: 'Clone and deploy your own Next.js portfolio in minutes.',
+    title: 'F1D',
+    description: 'Blog sur la programation informatique',
     image: 'https://assets.vercel.com/image/upload/q_auto/front/vercel/dps.png'
   };
 

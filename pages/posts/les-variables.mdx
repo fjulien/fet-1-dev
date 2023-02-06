@@ -13,7 +13,14 @@ import TitleSection from '../../components/TitleSection';
 
 <Img src="/images/posts/variables.png" alt="Boites de variable"></Img>
 
-<TitleSection title="TLDR">(Too Long; Didn't Read)</TitleSection>
+<TitleSection title="TLDR"></TitleSection>
+
+- Déclarer une variable avec `var`, `let` et `const`.
+- `const` est nom réafectable.
+- Assigner une valeur avec `=`.
+- Préférable d'utiliser `const`, si non réafection sinon `let` et `var` à éviter.
+
+<TitleSection title="Plus de détail"></TitleSection>
 
 Les variables sont au coeur de tout programme en JavaScript, elles permettent de stocker des informations pour les utiliser plus tard dans votre code.
 Il existe différentes façons de les déclarer `var`, `let` et `const`, utiliser les bons mots clés vous permettra de mieux gérer les portées et les réaffectations pour éviter les erreurs.
@@ -23,6 +30,8 @@ L'assignement se fait simplement avec l'opérateur `=`.
 On n'ai pas obligé d'affecter la variable lors de ça déclaration
 
 Apprendre à bien utiliser les variables est une étape cruciale pour devenir un développeur JavaScript expérimenté.
+
+<TitleSection title="Fait voir du code"></TitleSection>
 
 ```javascript
 /* EXAMPLE AVEC VAR */
@@ -39,21 +48,14 @@ const nomVariable3 = 'encore une autre valeur';
 nomVariable3 = 'Nouvelle encore autre valeur'; // Cela génére une erreure car déclaré avec const
 ```
 
-<TitleSection title="Résumé"></TitleSection>
-
-- Déclarer une variable avec `var`, `let` et `const`.
-- `const` est nom réafectable.
-- Assigner une valeur avec `=`.
-- Préférable d'utiliser `const`, si non réafection sinon `let` et `var` à éviter.
-
-<TitleSection title="Exercice"></TitleSection>
+<TitleSection title="Laisses le pro coder"></TitleSection>
 
 <Codesandbox
   src="/les-variables-87rwgp?https://codesandbox.io/embed/les-variables-87rwgp"
   paramsUrl={{ path: '%2Fsrc%2Findex.js' }}
 ></Codesandbox>
 
-<TitleSection title="Pour approfondire"></TitleSection>
+<TitleSection title="Quelque liens"></TitleSection>
 
 - [MDN](https://developer.mozilla.org/fr/docs/Learn/JavaScript/First_steps/Variables)
 - [Wikipedia](<https://fr.wikipedia.org/wiki/Variable_(informatique)>)
