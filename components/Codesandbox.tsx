@@ -32,9 +32,10 @@ const Codesandbox: FC<Props> = (props) => {
     borderRadius: '4px',
     overflow: 'hidden'
   };
+  // https://codesandbox.io/embed/les-variables-87rwgp?expanddevtools=1&fontsize=14&hidenavigation=1&theme=dark
   return (
     <iframe
-      src={`https://codesandbox.io/embed${src}&fontsize=14&hidenavigation=1&theme=dark&view=${view}&module=${path}`}
+      src={`https://codesandbox.io/embed${src}&expanddevtools&fontsize=14&hidenavigation=1&theme=dark&view=${view}&module=${path}`}
       style={style}
       title={title}
       allow={allow}
